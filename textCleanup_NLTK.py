@@ -25,19 +25,19 @@ http://www.nltk.org/book/ch03.html
 
 from nltk.tokenize import word_tokenize
 
-text = "This is a virtual NLP study group. We love NLP. We will do interesting projects"
+text = "This is a virtual NLP study group. We love NLP. We will do interesting projects. bob's"
 tokens = word_tokenize(text)
-print(tokens)
+#print(tokens)
 
 # remove all tokens that are not alphabetic
 words = [word for word in tokens if word.isalpha()]
-print(words)
+#print(words)
 
 
 #filter out stop words
 from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
-print(stop_words)
+#print(stop_words)
 
 #stem words
 #stemming is finding the root, helpful for sentiment analysis

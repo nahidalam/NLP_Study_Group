@@ -27,5 +27,6 @@ print(vectorizer.idf_)
 #vector = vectorizer.transform(text[0])
 vector = vectorizer.transform(text)
 # summarize encoded vector
+print(vector.todense())
 print(vector.shape)
 #print(vector.toarray())
